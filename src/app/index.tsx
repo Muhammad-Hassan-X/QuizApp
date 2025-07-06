@@ -1,12 +1,22 @@
-import { View, Text } from "react-native";
-import React from "react";
-
-const index = () => {
+import {  StyleSheet } from "react-native";
+import React, { FC } from "react";
+import { SafeAreaView } from "react-native-safe-area-context";
+import SplashScreen from "../screens/splashScreen/splashScreen";
+import InfoScreen1 from "../screens/infoScreens/InfoScreen1";
+const index: FC = () => {
 	return (
-		<View>
-			<Text>index</Text>
-		</View>
+		<SafeAreaView style={styles.container}>
+			{/* <SplashScreen /> */}
+			<InfoScreen1 />
+		</SafeAreaView>
 	);
 };
 
 export default index;
+
+const styles = StyleSheet.create({
+	container: {
+		padding: 10,
+		flex: 1,
+	},
+});
