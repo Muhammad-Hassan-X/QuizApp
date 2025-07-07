@@ -5,7 +5,7 @@ export const infoScreen1Styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		marginTop: 20,
-
+		justifyContent: "space-evenly",
 		alignItems: "center",
 	},
 
